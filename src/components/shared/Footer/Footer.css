@@ -5,7 +5,7 @@
 
 .footer .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
@@ -21,7 +21,7 @@
 
 .footer-nav-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
@@ -38,4 +38,15 @@
 .footer-copy {
     font-size: 0.875rem;
     color: #d1d5db;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px){
+    .footer .container{
+        flex-direction: column;
+    }
+    .footer-nav-list{
+        flex-direction: column;
+    }
+
 }
