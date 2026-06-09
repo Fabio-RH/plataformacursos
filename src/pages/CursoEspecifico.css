@@ -1,0 +1,319 @@
+.curso-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f5f9;
+}
+
+/* ─── Hero ─────────────────────────────────── */
+.curso-hero {
+  position: relative;
+  background-color: #0f172a;
+  background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+}
+
+.curso-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10,15,40,0.92) 40%, rgba(10,15,40,0.55) 100%);
+}
+
+.curso-hero__container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.curso-hero__content {
+  flex: 1;
+  color: #ffffff;
+}
+
+.curso-hero__badge {
+  display: inline-block;
+  background-color: #d97706;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.curso-hero__titulo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  max-width: 560px;
+}
+
+.curso-hero__descricao {
+  font-size: 1rem;
+  color: #c8d3e8;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 0 20px;
+}
+
+.curso-hero__meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.curso-hero__avaliacao {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+/* ─── Card de compra ─────────────────────────── */
+.curso-hero__card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card-thumb {
+  height: 160px;
+  background: linear-gradient(135deg, #1a2e5a 0%, #3b6fd4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-thumb__placeholder {
+  opacity: 0.7;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-preco {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.card-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.card-btn--primary {
+  background-color: #3b6fd4;
+  color: #ffffff;
+}
+
+.card-btn--primary:hover {
+  background-color: #2f5baf;
+}
+
+.card-btn--outline {
+  background-color: transparent;
+  border: 2px solid #3b6fd4;
+  color: #3b6fd4;
+}
+
+.card-btn--outline:hover {
+  background-color: #eff6ff;
+}
+
+.card-garantia {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.card-includes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+}
+
+.card-includes li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+/* ─── Conteúdo principal ─────────────────────── */
+.curso-main {
+  flex: 1;
+  padding: 48px 0;
+}
+
+.curso-main__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Estrutura das Aulas ────────────────────── */
+.curso-estrutura {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.curso-estrutura__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.curso-estrutura__header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.curso-estrutura__header span {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.curso-modulos {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Módulo ─────────────────────────────────── */
+.modulo {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modulo:last-child {
+  border-bottom: none;
+}
+
+.modulo__header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+  cursor: pointer;
+  background-color: #f8fafc;
+  user-select: none;
+  transition: background-color 0.15s;
+}
+
+.modulo__header::-webkit-details-marker {
+  display: none;
+}
+
+.modulo__header::before {
+  content: '▶';
+  font-size: 0.65rem;
+  color: #64748b;
+  margin-right: 12px;
+  transition: transform 0.2s;
+}
+
+details[open] .modulo__header::before {
+  transform: rotate(90deg);
+}
+
+.modulo__header:hover {
+  background-color: #f1f5f9;
+}
+
+.modulo__titulo {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.modulo__count {
+  font-size: 0.8rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+/* ─── Aulas ──────────────────────────────────── */
+.modulo__aulas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aula-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-top: 1px solid #f1f5f9;
+  transition: background-color 0.15s;
+}
+
+.aula-item:hover {
+  background-color: #f8fafc;
+}
+
+.aula-item__icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.aula-item__titulo {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.aula-item__tag {
+  font-size: 0.75rem;
+  color: #3b6fd4;
+  border: 1px solid #3b6fd4;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.aula-item__duracao {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  white-space: nowrap;
+}
