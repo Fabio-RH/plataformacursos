@@ -1,8 +1,8 @@
-import Header from "./components/Header";
+import Header from "./components/shared/Header";
 import HeroSection from "./components/HeroSection";
 import CategoryGrid from "./components/CategoryGrid";
 import InstructorSpotlight from "./components/InstructorSpotlight";
-import Footer from "./components/Footer";
+import Footer from "./components/shared/Footer";
 
 function App() {
   return (
