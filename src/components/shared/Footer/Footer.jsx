@@ -1,14 +1,15 @@
-import aprenderMais from "../../../../public/aprender-mais.svg"
-import './Footer.css'
+import aprenderMais from '../../../../src/assets/aprenderMais.svg'
+import styles from './Footer.css'
+
 
 function Footer() {
     return (
-        <footer className="footer">
-            <div className="container">
-                <img src={aprenderMais} className="footer-logo" alt="Aprender Mais Logo" />
+        <footer className={styles.footer}>
+            <div className={styles.container}>
+                <img src={aprenderMais} className={styles['footer-logo']} alt="Aprender Mais Logo" />
 
-                <nav className="footer-nav">
-                    <ul className="footer-nav-list">
+                <nav className={styles['footer-nav']}>
+                    <ul className={styles['footer-nav-list']}> 
                         <li><a href="#tbt">Termos de Uso</a></li>
                         <li><a href="tbt">Privacidade</a></li>
                         <li><a href="tbt">Ajuda</a></li>
@@ -16,7 +17,7 @@ function Footer() {
                     </ul>
                 </nav>
 
-                <p className="footer-copy">
+                <p className={styles['footer-copy']}>
                     © 2024 Aprender Mais. Todos os direitos reservados.
                 </p>
             </div>
