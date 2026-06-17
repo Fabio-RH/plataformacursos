@@ -6,16 +6,15 @@ import './App.css'
 
 
 import Footer from './components/shared/Footer/index.jsx'
-import LoginForm from './components/auth/LoginForm/index.jsx'
+import AuthPage from '../src/pages/AuthPage.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-<LoginForm/>
+      <AuthPage />
 
-<Footer/>
+      <Footer />
     </>
   )
 }
