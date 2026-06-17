@@ -101,7 +101,7 @@ export default function RegisterForm() {
                         if (confirmPassword === password && name !== "" && email !== "" && password !== "" && password.length >= 6) {
                             handleSubmit
                         } else {
-                            alert("Preencha os campos corretamente")
+                            // adicionar FormError
                             return
                         }
                     }}

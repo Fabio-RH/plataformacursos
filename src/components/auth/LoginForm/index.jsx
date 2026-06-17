@@ -22,7 +22,7 @@ export default function LoginForm() {
             localStorage.removeItem("rememberEmail");
         }
 
-        // Aqui é navegar para o dashboard
+        // Aqui é (caso true) navegar para o dashboard
         // navigate('/dashboard');
     };
 
