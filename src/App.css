@@ -35,3 +35,5 @@
         font-size: 1.3rem;
     }
 }
+@import "tailwindcss";
+@source "../src";
