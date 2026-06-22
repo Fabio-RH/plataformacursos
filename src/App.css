@@ -1,1 +1,37 @@
-@import "tailwindcss";
+@media (max-width: 900px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .overlay h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .overlay {
+        padding: 25px;
+    }
+
+    .overlay h2 {
+        font-size: 1.3rem;
+    }
+}

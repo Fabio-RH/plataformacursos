@@ -1,22 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
-
-import Footer from './components/shared/Footer/index.jsx'
-import AuthPage from '../src/pages/AuthPage.jsx'
+import Header from "./components/shared/Header";
+import HeroSection from "./components/HeroSection";
+import CategoryGrid from "./components/CategoryGrid";
+import InstructorSpotlight from "./components/InstructorSpotlight";
+import Footer from "./components/shared/Footer";
 
 function App() {
-
   return (
     <>
-      <AuthPage />
+      <Header />
+
+      <main
+        style={{
+          maxWidth: "1100px",
+          margin: "0 auto",
+          padding: "20px",
+        }}
+      >
+        <HeroSection />
+
+        <section
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 250px",
+            gap: "20px",
+            marginTop: "40px",
+          }}
+        >
+          <CategoryGrid />
+          <InstructorSpotlight />
+        </section>
+      </main>
 
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
