@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./HeroSection.module.css";
 
 function HeroSection() {
@@ -18,7 +19,9 @@ function HeroSection() {
             aeroespacial com os melhores especialistas.
           </p>
 
-          <button>Ver Detalhes</button>
+          <Link to="/curso/1">
+            <button>Ver Detalhes</button>
+          </Link>
         </div>
       </div>
     </section>
