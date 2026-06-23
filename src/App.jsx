@@ -1,17 +1,17 @@
 import Header from "./components/shared/Header";
 import Footer from "./components/shared/Footer";
-import CursoEspecifico from "./pages/CursoEspecifico";
+import AppRouter from "./components/routes/AppRouter";
 
 function App() {
   return (
     <>
-      <Header 
+      <Header
         tag1="Personalidades"
         tag2="Cursos"
         tag3="Cadastro / Entrar"
       />
 
-      <CursoEspecifico/>
+      <AppRouter />
 
       <Footer />
     </>

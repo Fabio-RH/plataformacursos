@@ -1,7 +1,7 @@
 
-import HeroSection from "./components/HeroSection";
-import CategoryGrid from "./components/CategoryGrid";
-import InstructorSpotlight from "./components/InstructorSpotlight";
+import HeroSection from "../components/HeroSection";
+import CategoryGrid from "../components/CategoryGrid";
+import InstructorSpotlight from "../components/InstructorSpotlight";
 
 
 export default function MainPage() {
