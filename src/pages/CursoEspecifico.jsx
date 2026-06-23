@@ -1,4 +1,4 @@
-import Footer from '../components/shared/Footer/Footer.jsx'
+import styles from './styles/cursoEspecifico.module.css';
 
 const curso = {
   categoria: 'Desenvolvimento',
@@ -44,26 +44,7 @@ export default function CursoEspecifico() {
   const totalAulas = curso.modulos.reduce((acc, m) => acc + m.aulas.length, 0)
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#f1f5f9' }}>
-
-      {/* Navbar */}
-      <header style={{ backgroundColor: '#1a2e5a', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', position: 'relative', zIndex: 50 }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', height: '64px', display: 'flex', alignItems: 'center', gap: '32px' }}>
-          <a href="/">
-            <img src="/aprender-mais.svg" alt="Aprender Mais" style={{ height: '22px' }} />
-          </a>
-          <nav style={{ display: 'flex', gap: '24px', flex: 1 }}>
-            {['Cursos', 'Blog', 'Sobre', 'Contato'].map(l => (
-              <a key={l} href="#" style={{ color: '#c8d3e8', textDecoration: 'none', fontSize: '0.9rem' }}>{l}</a>
-            ))}
-          </nav>
-          <button style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '6px', display: 'flex', flexDirection: 'column', gap: '5px' }} aria-label="Menu">
-            <span style={{ display: 'block', width: '22px', height: '2px', backgroundColor: '#c8d3e8', borderRadius: '2px' }} />
-            <span style={{ display: 'block', width: '22px', height: '2px', backgroundColor: '#c8d3e8', borderRadius: '2px' }} />
-            <span style={{ display: 'block', width: '22px', height: '2px', backgroundColor: '#c8d3e8', borderRadius: '2px' }} />
-          </button>
-        </div>
-      </header>
+    <div style={{ paddingTop:'4rem', minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#f1f5f9' }}>
 
       {/* Hero */}
       <section style={{
@@ -155,7 +136,6 @@ export default function CursoEspecifico() {
         </div>
       </main>
 
-      <Footer />
     </div>
   )
 }

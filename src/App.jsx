@@ -1,35 +1,17 @@
 import Header from "./components/shared/Header";
-import HeroSection from "./components/HeroSection";
-import CategoryGrid from "./components/CategoryGrid";
-import InstructorSpotlight from "./components/InstructorSpotlight";
 import Footer from "./components/shared/Footer";
+import CursoEspecifico from "./pages/CursoEspecifico";
 
 function App() {
   return (
     <>
-      <Header />
+      <Header 
+        tag1="Personalidades"
+        tag2="Cursos"
+        tag3="Cadastro / Entrar"
+      />
 
-      <main
-        style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
-          padding: "20px",
-        }}
-      >
-        <HeroSection />
-
-        <section
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 250px",
-            gap: "20px",
-            marginTop: "40px",
-          }}
-        >
-          <CategoryGrid />
-          <InstructorSpotlight />
-        </section>
-      </main>
+      <CursoEspecifico/>
 
       <Footer />
     </>

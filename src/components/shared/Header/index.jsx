@@ -1,14 +1,14 @@
 import styles from "./Header.module.css";
 
-function Header() {
+function Header({tag1, tag2, tag3}) {
   return (
     <header className={styles.navbar}>
       <div className={styles.logo}>APRENDER +</div>
 
       <nav className={styles.nav}>
-        <a href="#">Cursos</a>
-        <a href="#">Mentores</a>
-        <a href="#">Entrar</a>
+        <a href="#">{tag1}</a>
+        <a href="#">{tag2}</a>
+        <a href="#">{tag3}</a>
       </nav>
 
       {/* Aguardar funcionalidade */}
